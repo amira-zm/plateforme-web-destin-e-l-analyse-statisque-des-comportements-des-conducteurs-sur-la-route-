@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cef4c72bc2c54ce6b82bfcbabef282c0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_cef4c72bc2c54ce6b82bfcbabef282c0" ></div>
+        
+</body>
+<script>    
+    
+            var map_cef4c72bc2c54ce6b82bfcbabef282c0 = L.map(
+                "map_cef4c72bc2c54ce6b82bfcbabef282c0",
+                {
+                    center: [34.7449035, 10.76099645],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c2a066716c194183b0131b09434c000b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_cef4c72bc2c54ce6b82bfcbabef282c0);
+        
+    
+            var marker_b3258235a4da4b3abbc3dcf0b39fc53d = L.marker(
+                [34.74459202, 10.75953304],
+                {}
+            ).addTo(map_cef4c72bc2c54ce6b82bfcbabef282c0);
+        
+    
+            var icon_b8d57393d25d4b84bbd492c30ba5965a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b3258235a4da4b3abbc3dcf0b39fc53d.setIcon(icon_b8d57393d25d4b84bbd492c30ba5965a);
+        
+    
+        var popup_0311774636c94598b75868b545b22f02 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78a0e21c1f0c490a87e1c1861200958b = $(`<div id="html_78a0e21c1f0c490a87e1c1861200958b" style="width: 100.0%; height: 100.0%;">Départ</div>`)[0];
+            popup_0311774636c94598b75868b545b22f02.setContent(html_78a0e21c1f0c490a87e1c1861200958b);
+        
+
+        marker_b3258235a4da4b3abbc3dcf0b39fc53d.bindPopup(popup_0311774636c94598b75868b545b22f02)
+        ;
+
+        
+    
+    
+            var marker_d5fd2fb6066a45dbbab19a80a7158c7a = L.marker(
+                [34.74521498, 10.76245986],
+                {}
+            ).addTo(map_cef4c72bc2c54ce6b82bfcbabef282c0);
+        
+    
+            var icon_0a533109ed4d44e78d43c3d38e3680c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d5fd2fb6066a45dbbab19a80a7158c7a.setIcon(icon_0a533109ed4d44e78d43c3d38e3680c4);
+        
+    
+        var popup_2fc26a078fdc4f8d927356469d3176a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2d69d93e0f74f2da860b52f9f596dde = $(`<div id="html_d2d69d93e0f74f2da860b52f9f596dde" style="width: 100.0%; height: 100.0%;">Arrivée après 0.28 km</div>`)[0];
+            popup_2fc26a078fdc4f8d927356469d3176a0.setContent(html_d2d69d93e0f74f2da860b52f9f596dde);
+        
+
+        marker_d5fd2fb6066a45dbbab19a80a7158c7a.bindPopup(popup_2fc26a078fdc4f8d927356469d3176a0)
+        ;
+
+        
+    
+    
+            var poly_line_daa8d876fa2f48d28c38b6ca40b87d1c = L.polyline(
+                [[34.74459202, 10.75953304], [34.74459556, 10.75978764], [34.74468241, 10.76001717], [34.74473707, 10.76026505], [34.74475239, 10.76051163], [34.74474751, 10.76078706], [34.74481368, 10.76104686], [34.74485954, 10.76124794], [34.74489676, 10.76147799], [34.74493942, 10.76168184], [34.74499106, 10.76186564], [34.74507943, 10.76205112], [34.74512662, 10.76228073], [34.74516225, 10.76240324], [34.74519284, 10.76244556], [34.74520292, 10.76245484], [34.74521498, 10.76245986]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_cef4c72bc2c54ce6b82bfcbabef282c0);
+        
+</script>
